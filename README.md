@@ -1,1 +1,1 @@
-UTA-DataScience-Logo.png
+![](UTA-DataScience-Logo.png)
