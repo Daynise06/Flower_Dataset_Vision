@@ -55,63 +55,81 @@ https://www.kaggle.com/datasets/aksha05/flower-image-dataset/data
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+* Accuracy vs. Epoch plotted
+* Confusion matrix shown
+* No overfitting observed due to regularization and augmentation
+
+Model Type	Accuracy
+Custom CNN	~80%
+MobileNetV2	~92%
+
+
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* Transfer learning significantly outperforms small custom CNN
+* Even small datasets can achieve strong performance with the right architecture and tuning
+
+
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* Apply model to wild flower images (generalization test)
+* Add test set and implement precision/recall/F1 scoring
+* Use data augmentation more aggressively
+
 
 ## How to reproduce results
 
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
+* On Colab:
+   * Open the provided training_model.ipynb notebook
+   * Run each cell in sequence
+   * Use Google Drive to upload the dataset, or download via Kaggle API
 
 ### Overview of files in repository
 
 * Describe the directory structure, if any.
 * List all relavent files and describe their role in the package.
 * An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
+  * utils.py: Utility functions for file cleanup and plotting
+  * data_preparation.ipynb: Organizes raw images into folders by class
+  * visualization.ipynb: Visualizes dataset samples
+  * training_model.ipynb: Trains CNN and MobileNetV2 models
+  * performance.ipynb: Compares model accuracy and loss
+  * requirements.txt: List of required packages
 
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
+
+
 
 ### Software Setup
 * List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
+  
+* tensorflow
+* matplotlib
+* numpy
+* pandas
+* scikit-learn
+
 
 ### Data
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
+Dataset from Kaggle: Flower Image Dataset
+If using Colab:
+* Download from Kaggle using API or upload manually to Google Drive
+* Then mount Drive and unzip into your project folder
 
 ### Training
 
-* Describe how to train the model
+* Prepare data folders or run data_preparation.ipynb
+* Open training_model.ipynb
+* Set your base_path to your Drive location
+* Run all cells
 
 #### Performance Evaluation
 
-* Describe how to run the performance evaluation.
-
+* Evaluate using validation accuracy, loss curves, and confusion matrix
+* Compare model outputs visually using performance.ipynb
 
 ## Citations
 
-* Provide any references.
+* Kaggle Dataset: https://www.kaggle.com/datasets/aksha05/flower-image-dataset
