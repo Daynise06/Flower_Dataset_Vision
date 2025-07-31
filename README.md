@@ -1,6 +1,6 @@
 ![](UTA-DataScience-Logo.png)
 
-# Flower Image Classification and Transfer Learning
+# Flower Image Classification and Transfer Learning 🌸
 
 * **One Sentence Summary** This repository contains an image classification pipeline trained on the Kaggle "Flower Image Dataset" using convolutional neural networks and transfer learning in Google Colab.
 https://www.kaggle.com/datasets/aksha05/flower-image-dataset/data
