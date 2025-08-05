@@ -36,6 +36,7 @@ https://www.kaggle.com/datasets/aksha05/flower-image-dataset/data
 * Plotted sample images from each class
 * Verified class imbalance
 * Observed varying background noise and color patterns
+![](preview.png)
 
 ### Problem Formulation
 
