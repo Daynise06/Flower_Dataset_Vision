@@ -64,6 +64,8 @@ Model Type	Accuracy
 Custom CNN	~80%
 MobileNetV2	~92%
 
+![](accuracy_table.png)
+
 
 
 ### Conclusions
