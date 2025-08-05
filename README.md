@@ -54,6 +54,12 @@ https://www.kaggle.com/datasets/aksha05/flower-image-dataset/data
   * Difficulties: Initial directory setup and label parsing
   * Resolution: Used filename parsing and automated folder reorganization
 
+![](acc_plot.png)
+![](accuracy_plot.png)
+![](base_model_plots.png)
+![](loss_plot.png)
+
+
 ### Performance Comparison
 
 * Accuracy vs. Epoch plotted
