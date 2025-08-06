@@ -25,6 +25,8 @@ https://www.kaggle.com/datasets/aksha05/flower-image-dataset/data
           * Training: 80%
           * Validation: 20%
 
+![](augmented_images.png)
+
 #### Preprocessing / Clean up
 
 * Moved all images into class-labeled subfolders (daisy/, rose/, etc.)
